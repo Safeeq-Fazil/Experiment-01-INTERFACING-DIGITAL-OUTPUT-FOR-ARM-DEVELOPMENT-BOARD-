@@ -85,17 +85,12 @@ The main features of LPC2148 include the following.
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 void led();
-
-  */
 int main(void)
 {
- 
   HAL_Init();
-
- 
   SystemClock_Config();
-
-  MX_GPIO_Init();
+ 
+ MX_GPIO_Init();
   
   while (1)
   {
@@ -130,7 +125,7 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  */
+  
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
@@ -184,6 +179,7 @@ void assert_failed(uint8_t *file, uint32_t line)
 
 
 ## Output  :
+
  
  
  
